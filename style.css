@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../bac.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#scoreBox{
+    position: absolute;
+    top: 5%;
+    right: 13%;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2;
+    background-color: transparent;
+    color: aliceblue;  
+    border: 1px solid  #ff0800;
+    font-family: 'New Tegomin', serif; 
+}
+
+#speed{
+    position: absolute;
+    top: 13%;
+    border: 5px solid rgb(255, 255, 255);
+    right: 13%;
+    font-weight: bold;
+    color: aliceblue;
+    font-family: 'New Tegomin', serif;
+    
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 13%;
+    right: 13%;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2;
+    background-color: transparent;
+    color: aliceblue;  
+    border: 1px solid  #ff0800;
+    font-family: 'New Tegomin', serif;
+}
+#board{
+    background: url("../box.jpg");
+    width: 100vmin;
+    height: 98vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    
+}
+
+.head{
+    background: url("../face.jpg");
+    border: 2px solid rgb(37, 1, 37);
+    transform: scale(1.02);
+    border-radius: 9px;
+
+}
+
+.snake{
+    background: linear-gradient(rgb(0, 0, 0), rgb(245, 249, 3)) ;
+    border: 2px solid rgb(37, 1, 37);
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.food{
+    background: linear-gradient(rgb(8, 230, 19), rgb(0, 0, 0));
+    border: .25vmin solid rgb(255, 255, 255);
+    border-radius: 8px;
+    
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2;
+}
+
+.btn-full{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    margin-right: 15px;   
+    border: 1px solid  #ff0800;
+}
